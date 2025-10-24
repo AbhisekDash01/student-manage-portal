@@ -13,7 +13,7 @@ public class UpdateStudentServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        String roll = request.getParameter("roll"); // Identify student
+        String roll = request.getParameter("roll"); 
         String name = request.getParameter("name");
         String cls = request.getParameter("class");
         String marks = request.getParameter("marks");
