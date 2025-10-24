@@ -1,6 +1,6 @@
 package com.studentfolder;
 
-import java.io.IOException; // Add this line
+import java.io.IOException; 
 import java.io.PrintWriter;
 import java.sql.*;
 import jakarta.servlet.*;
@@ -19,7 +19,7 @@ public class DeleteStudentServlet extends HttpServlet {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/student_db", "root", "abhisek@2006"
+                "jdbc:mysql://localhost:3306/student_db", "root", "password"
             );
 
             String sql = "DELETE FROM students WHERE rollno=?";
